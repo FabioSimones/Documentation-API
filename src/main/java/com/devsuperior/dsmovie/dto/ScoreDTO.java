@@ -17,6 +17,8 @@ public class ScoreDTO {
 	@PositiveOrZero(message = "Score should be greater than or equal to zero")
 	private Double score;
 
+    public ScoreDTO(){}
+
 	public ScoreDTO(Long movieId, Double score) {
 		this.movieId = movieId;
 		this.score = Double.valueOf(df.format(score));
